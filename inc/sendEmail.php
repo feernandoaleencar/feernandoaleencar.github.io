@@ -24,7 +24,7 @@ if($_POST) {
 		$error['message'] = "Por favor insira a sua mensagem. Deve ter pelo menos 15 caracteres.";
 	}
    // Subject
-	if ($subject == '') { $subject = "Submissão de Formulário de Contato"; }
+	if ($subject == '') { $subject = "Formulario de Contato - Portfolio"; }
 
 
    // Set Message
@@ -43,7 +43,7 @@ if($_POST) {
  	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=utf-8\r\n";
 
-
+	/*
    if (!$error) {
 
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
@@ -63,7 +63,7 @@ if($_POST) {
 		echo $response;
 
 	} # end if - there was a validation error
-
+	*/
 }
 
 ?>
