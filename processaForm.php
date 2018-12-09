@@ -13,9 +13,9 @@
     	$corpo = "<br><strong> contactSubject: </strong> $assunto";
     	$corpo = "<br><strong> contactMessage: </strong> $msg";
 
-    echo $name."<br>";
-    echo $email."<br>";
-    echo $assunto."<br>";
-    echo $msg;
+    	$header = "From: $email Reply-to: $email";
+    	$header .= "Content-Type: text/html; charset = utf-8";
+
+    @email($para,$inf,$corpo,$header);
 
 ?>
