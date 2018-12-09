@@ -18,4 +18,6 @@
 
     email($para,$inf,$corpo,$header);
 
+    header("location:index.html?msg=enviado");
+
 ?>
