@@ -43,7 +43,7 @@ if($_POST) {
  	$headers .= "MIME-Version: 1.0\r\n";	
 	$headers .= "Content-Type: text/html; charset=utf-8\r\n";
 
-   	
+   	/*
    if (!$error) {
 
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
@@ -63,7 +63,7 @@ if($_POST) {
 		echo $response;
 
 	} # end if - there was a validation error
-	
+	*/
 }
 
 ?>
