@@ -28,9 +28,9 @@ if($_POST) {
 
 
    // Set Message
-   $message = "Email from: " . $name . "<br />";
-   $message .= "Email address: " . $email . "<br />";
-   $message .= "Message: <br />";
+   $message = "Nome Dest: " . $name . "<br />";
+   $message .= "Email Dest: " . $email . "<br />";
+   $message .= "Mensagem: <br />";
    $message .= $contact_message;
    $message .= "<br /> ----- <br /> Este e-mail foi enviado do seu site.<br />";
 
@@ -40,7 +40,7 @@ if($_POST) {
    // Email Headers
 	$headers = "From: " . $from . "\r\n";
 	$headers .= "Reply-To: ". $email . "\r\n";
- 	$headers .= "MIME-Version: 1.0\r\n";
+ 	$headers .= "MIME-Version: 1.0\r\n";	
 	$headers .= "Content-Type: text/html; charset=utf-8\r\n";
 
    /*	
