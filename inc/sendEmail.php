@@ -28,11 +28,11 @@ if($_POST) {
 
 
    // Set Message
-   $message = "Nome Dest: " . $name . "<br />";
-   $message .= "Email Dest: " . $email . "<br />";
-   $message .= "Mensagem: <br />";
+   $message = "<strong>Nome Dest: </strong>" . $name . "<br />";
+   $message .= "<strong>Email Dest: </strong>" . $email . "<br />";
+   $message .= "<strong>Mensagem: </strong><br /><br />";
    $message .= $contact_message;
-   $message .= "<br /> <br /> ----- <br /><br /> Este e-mail foi enviado do seu site.<br />";
+   $message .= "<br /> <br /> ----- <br /><br /><strong> Este e-mail foi enviado do seu site.</strong><br />";
 
    // Set From: header
    $from =  $name . " <" . $email . ">";
