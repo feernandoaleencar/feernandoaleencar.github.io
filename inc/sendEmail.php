@@ -24,7 +24,7 @@ if($_POST) {
 		$error['message'] = "Por favor insira a sua mensagem. Deve ter pelo menos 15 caracteres.";
 	}
    // Subject
-	if ($subject == '') { $subject = "Formulario de Contato - Portfolio"; }
+	if ($subject == '') { $subject = "Mensagem de Contato - Portfolio"; }
 
 
    // Set Message
@@ -32,7 +32,7 @@ if($_POST) {
    $message .= "Email address: " . $email . "<br />";
    $message .= "Message: <br />";
    $message .= $contact_message;
-   $message .= "<br /> ----- <br /> Este e-mail foi enviado do formulário de contato do seu site.<br />";
+   $message .= "<br /> ----- <br /> Este e-mail foi enviado do seu site.<br />";
 
    // Set From: header
    $from =  $name . " <" . $email . ">";
