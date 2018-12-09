@@ -16,6 +16,6 @@
     	$header = "From: $email Reply-to: $email";
     	$header .= "Content-Type: text/html; charset = utf-8";
 
-    @email($para,$inf,$corpo,$header);
+    email($para,$inf,$corpo,$header);
 
 ?>
