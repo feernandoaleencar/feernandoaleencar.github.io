@@ -32,7 +32,7 @@ if($_POST) {
    $message .= "<strong>Email Dest: </strong>" . $email . "<br />";
    $message .= "<strong>Mensagem: </strong><br /><br />";
    $message .= $contact_message;
-   $message .= "<br /> <br /> ----- <br /><br /><strong> Este e-mail foi enviado do seu site.</strong><br />";
+   $message .= "<br /> <br /> ----- <br /><br /><strong> Este e-mail foi enviado do seu Portfolio.</strong><br />";
 
    // Set From: header
    $from =  $name . " <" . $email . ">";
@@ -49,7 +49,7 @@ if($_POST) {
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
-		if ($mail) { echo "OK"; }
+		if ($mail) { echo "OKSEND"; }
       else { echo "Algo deu errado. Por favor, tente novamente."; }
 		
 	} # end if - no validation error
