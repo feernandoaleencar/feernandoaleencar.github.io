@@ -227,7 +227,7 @@
 			$.ajax({      	
 
 		      type: "POST",
-		      url: "inc/processaForm.php",
+		      url: "processaForm.php",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
