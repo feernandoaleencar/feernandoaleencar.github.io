@@ -13,8 +13,9 @@
     	$corpo = "<br><strong> contactSubject: </strong> $assunto";
     	$corpo = "<br><strong> contactMessage: </strong> $msg";
 
-    	$header = "From: $email Reply-to: $email";
-    	$header .= "Content-Type: text/html; charset = utf-8";
+    	$header = "Content-Type: text/html; charset = utf-8\n";	
+    	$header .= "From: $email Reply-to: $email\n";
+    	
 
     email($para,$inf,$corpo,$header);
 
