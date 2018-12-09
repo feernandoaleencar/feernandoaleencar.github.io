@@ -227,7 +227,7 @@
 			$.ajax({      	
 
 		      type: "POST",
-		      url: "http://www.fernandoalencar.com/",
+		      url: "inc/sendEmail.php",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
@@ -237,7 +237,7 @@
 		      success: function(msg) {
 
 	            // Message was sent
-	            if (msg == 'OKJS') {
+	            if (msg == 'OK') {
 	            	sLoader.fadeOut(); 
 	               $('#message-warning').hide();
 	               $('#contactForm').fadeOut();
