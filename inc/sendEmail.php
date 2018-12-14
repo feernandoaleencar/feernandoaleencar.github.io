@@ -49,7 +49,7 @@ if($_POST) {
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
-		if ($mail) header("http://www.fernandoalencar.com/")
+		if ($mail) {header("http://www.fernandoalencar.com/");}
       else { echo "Algo deu errado. Por favor, tente novamente."; }
 		
 	} # end if - no validation error
